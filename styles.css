@@ -131,20 +131,42 @@ hr {
     border-bottom: 1px solid var(--clr-light-grey);
   }
 
-  td {
-    padding-block: 12px;
+  tr {
+    .nutrition_key {
+      padding: 12px 0 12px 32px;
+    }
+
+    .nutrition_value {
+      padding: 12px 32px 12px 0;
+    }
   }
 
-  .nutrition_key {
-    padding-left: 32px;
+  tr:first-child {
+    .nutrition_key {
+      padding: 0 0 12px 32px;
+    }
+
+    .nutrition_value {
+      padding: 0 32px 12px 0;
+    }
   }
 
-  .nutrition_value {
-    padding-right: 32px;
+  tr:last-child {
+    .nutrition_key {
+      padding: 12px 0 0 32px;
+    }
+
+    .nutrition_value {
+      padding: 12px 32px 0 0;
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+  }
+
   img {
     border-radius: 0;
   }
