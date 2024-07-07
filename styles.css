@@ -127,12 +127,20 @@ hr {
   width: 100%;
   margin-top: 24px;
 
-  tr {
+  tr:not(:last-child) {
     border-bottom: 1px solid var(--clr-light-grey);
   }
 
   td {
-    padding: 12px 32px;
+    padding-block: 12px;
+  }
+
+  .nutrition_key {
+    padding-left: 32px;
+  }
+
+  .nutrition_value {
+    padding-right: 32px;
   }
 }
 
