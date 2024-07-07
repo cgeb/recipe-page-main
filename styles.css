@@ -27,7 +27,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin-top: 123px;
+  margin-bottom: 124px;
 }
 
 .heading_l {
